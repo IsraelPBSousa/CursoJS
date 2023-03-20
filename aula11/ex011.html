@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Estrangeiro ou Brasileiro</h1>
+    Vivendo em <input type="text" name="des" id="des">
+    <input type="button" value="Enviar" onclick="descobrir()">
+    <div id="res">
+
+    </div>
+    <script>
+        function descobrir() {
+            var desc = window.document.getElementById('des')
+            var res = windows.document.getElementById('res')
+            if (desc == 'Brasil') {
+                res.innerHTML += '<p>Como você vive no</p> ' + desc + ' <p>você é Brasileiro</p>'} else { res.innerHTML += '<p>você é estrangeiro.</p>'
+                }
+        }
+    </script>
+    
+</body>
+</html>
